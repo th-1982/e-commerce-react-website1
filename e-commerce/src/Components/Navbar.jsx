@@ -1,4 +1,7 @@
 import React from 'react'
+import { FiSearch } from "react-icons/fi";
+import { GoPerson } from "react-icons/go";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -18,7 +21,11 @@ const Navbar = () => {
         <li>Explore</li>
       </ul>
 
-      <div></div>
+      <div>
+        <p><FiSearch /></p>
+        <p><GoPerson /></p>
+        <p><FiShoppingCart /></p>
+      </div>
     </div>
   )
 }
