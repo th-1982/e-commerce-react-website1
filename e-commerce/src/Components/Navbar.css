@@ -4,4 +4,61 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
+.navSection{
+    display: flex;
+    padding: 20px 10%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navSection img{
+    width: 100px;
+}
+
+.navSection .logoDiv{
+    margin-right: auto;
+}
+
+.navSection ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    gap: 10px;
+}
+
+.navSection ul li{
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.navSection ul li:hover{
+    background-color: rgb(214, 237, 244);
+    border-radius: 30px;
+    transition: all ease 0.2s;
+}
+
+.navSection .iconsDiv{
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.navSection .iconsDiv p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.iconsDiv p:hover{
+    background-color: rgb(214, 237, 244);
+    transition: all ease 0.2s;
+
+}
+

@@ -2,12 +2,13 @@ import React from 'react'
 import { FiSearch } from "react-icons/fi";
 import { GoPerson } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
+import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='navSection'>
 
-      <div>
+      <div className='logoDiv'>
         <img src="https://ciseco-nextjs.vercel.app/_next/static/media/logo.14d0e71d.svg" alt="Logo" />
       </div>
 
@@ -21,7 +22,7 @@ const Navbar = () => {
         <li>Explore</li>
       </ul>
 
-      <div>
+      <div className='iconsDiv'>
         <p><FiSearch /></p>
         <p><GoPerson /></p>
         <p><FiShoppingCart /></p>
