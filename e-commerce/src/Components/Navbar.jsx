@@ -2,6 +2,7 @@ import React from 'react'
 import { FiSearch } from "react-icons/fi";
 import { GoPerson } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -18,8 +19,8 @@ const Navbar = () => {
         <li>Woman</li>
         <li>Beauty</li>
         <li>Sport</li>
-        <li>Template</li>
-        <li>Explore</li>
+        <li>Template<MdKeyboardArrowDown /></li>
+        <li>Explore <MdKeyboardArrowDown /></li>
       </ul>
 
       <div className='iconsDiv'>
