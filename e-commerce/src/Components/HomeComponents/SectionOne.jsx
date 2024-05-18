@@ -9,6 +9,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const SectionOne = () => {
+
+
+  AOS.init();
+
+
   const [showSectionOne, setShowSectionOne] = useState(true)
   const [showSectionTwo, setShowSectionTwo] = useState(false)
   const [showSectionThree, setShowSectionThree] = useState(false)
@@ -18,12 +23,14 @@ const SectionOne = () => {
     setShowSectionTwo(false);
     setShowSectionThree(false);
   }
+
   
   const handleChangeTwo = () => {
     setShowSectionOne(false);
     setShowSectionTwo(true);
     setShowSectionThree(false);
   }
+
 
   const handleChangeThree = () => {
     setShowSectionOne(false);
@@ -34,7 +41,7 @@ const SectionOne = () => {
   
   return (
 
-    <div>
+   
       <div className='generalHomeSection'>
 
     {showSectionOne === true &&
@@ -78,6 +85,12 @@ const SectionOne = () => {
     </div>
     </div>
     }
+
+    <div className='myBtn'>
+      <button className={showSectionOne === true && 'activeBtn'} onClick={handleChangeOne}></button>
+      <button className={showSectionTwo === true && 'activeBtn'} onClick={handleChangeTwo}></button>
+      <button className={showSectionThree === true && 'activeBtn'} onClick={handleChangeThree}></button>
+    </div>
     </div>
   )
 }
