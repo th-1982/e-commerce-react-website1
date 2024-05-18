@@ -5,6 +5,9 @@ import image2 from '../images/hero-right-2.webp'
 import image3 from '../images/hero-right-3.webp'
 import { FiSearch } from "react-icons/fi";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const SectionOne = () => {
   const [showSectionOne, setShowSectionOne] = useState(true)
   const [showSectionTwo, setShowSectionTwo] = useState(false)
@@ -16,12 +19,26 @@ const SectionOne = () => {
     setShowSectionThree(false);
   }
   
+  const handleChangeTwo = () => {
+    setShowSectionOne(false);
+    setShowSectionTwo(true);
+    setShowSectionThree(false);
+  }
+
+  const handleChangeThree = () => {
+    setShowSectionOne(false);
+    setShowSectionTwo(false);
+    setShowSectionThree(true);
+  }
+  
+  
   return (
 
     <div>
+      <div className='generalHomeSection'>
 
     {showSectionOne === true &&
-    <div className='homeSectionOne'>
+    <div className='homeSectionOne' data-aos="fade-up" data-aos-duration="2000">
     <div className='firstSection'>
       <p>In this season, find the best 🔥</p>
       <h2>Exclusive collection for everyone</h2>
@@ -35,7 +52,7 @@ const SectionOne = () => {
     }
 
     {showSectionTwo === true &&
-    <div className='homeSectionOne'>
+    <div className='homeSectionOne' data-aos="fade-up" data-aos-duration="2000">
     <div className='firstSection'>
       <p>In this season, find the best 🔥</p>
       <h2>Exclusive collection for everyone</h2>
@@ -49,7 +66,7 @@ const SectionOne = () => {
     }
 
     {showSectionThree === true &&
-    <div className='homeSectionOne'>
+    <div className='homeSectionOne' data-aos="fade-up" data-aos-duration="2000">
     <div className='firstSection'>
       <p>In this season, find the best 🔥</p>
       <h2>Exclusive collection for everyone</h2>
