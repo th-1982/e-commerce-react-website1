@@ -80,16 +80,72 @@
     background-color: rgb(1, 11, 41) !important;
 }
 
-/* --------Swiper------------------*/
+/* --------Section Two------------------*/
+
+.card1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    background-color: #eeebd4;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.card1 p{
+    font-size: 12px;
+}
+
+
+.card1 h2{
+    font-size: 20px;
+}
+
+.card1One{
+    width: 100%;
+}
+
+.card1One button{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    
+}
+
+.card1Two{
+    width: 100%;
+}
+.homeSectionTwo{
+    padding: 20px 10%;
+    padding-top: 100px;
+    
+
+}
+
 .swiper {
     width: 100%;
     height: 100%;
+    
+  }
+
+  .mySwiper{
+    padding-top: 40px !important;
+
   }
   
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
+  
+    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;

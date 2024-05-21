@@ -3,6 +3,14 @@ import './SectionOne.css'
 import image1 from '../images/hero-right.webp'
 import image2 from '../images/hero-right-2.webp'
 import image3 from '../images/hero-right-3.webp'
+
+
+import cardImg1 from '../images/1.webp'
+import cardImg2 from '../images/3.webp'
+import cardImg3 from '../images/4.webp'
+import cardImg4 from '../images/5.webp'
+
+
 import { FiSearch } from "react-icons/fi";
 
 import AOS from 'aos';
@@ -101,22 +109,89 @@ const SectionOne = () => {
     </div>
 
     <div className='homeSectionTwo'>
-    <Swiper
-        slidesPerView={4}
+      <h2>Discover more. Good things are waiting for you</h2>
+
+      <Swiper
+        slidesPerView={3}
         spaceBetween={30}
-        centeredSlides={true}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide> 
+          <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+          </SwiperSlide>
+        <SwiperSlide>
+        <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+          </SwiperSlide>
+        <SwiperSlide>
+        <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+          </SwiperSlide>
+        <SwiperSlide>
+        <div className='card1'>
+          <div className='card1One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card1Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+        </SwiperSlide>
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
