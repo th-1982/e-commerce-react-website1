@@ -10,6 +10,13 @@ import cardImg2 from '../images/3.webp'
 import cardImg3 from '../images/4.webp'
 import cardImg4 from '../images/5.webp'
 
+import img1 from '../images/sport-2.webp'
+import img2 from '../images/sport-3.webp'
+import img3 from '../images/sport-4.webp'
+import img4 from '../images/sport-6.webp'
+import img5 from '../images/sport-7.webp'
+
+
 
 import { FiSearch } from "react-icons/fi";
 
@@ -109,7 +116,7 @@ const SectionOne = () => {
     </div>
 
     <div className='homeSectionTwo'>
-      <h2>Discover more. Good things are waiting for you</h2>
+      <h2 className='homesectionTwoh2'>Discover more. <span>Good things are waiting for you</span></h2>
 
       <Swiper
         slidesPerView={3}
@@ -124,7 +131,7 @@ const SectionOne = () => {
           <div className='card1'>
           <div className='card1One'>
             <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
+            <h2>Shop the latest <br/> from top brands</h2>
             <button>show me all</button>
           </div>
           <div className='card1Two'> 
@@ -133,70 +140,70 @@ const SectionOne = () => {
           </div>
           </SwiperSlide>
         <SwiperSlide>
-        <div className='card1'>
+        <div className='card1 two'>
           <div className='card1One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
+            <p>Digital gift cards</p>
+            <h2>Give the gift of choice</h2>
             <button>show me all</button>
           </div>
           <div className='card1Two'> 
-            <img src={cardImg1} alt="card-image" />
+            <img src={cardImg4} alt="card-image" />
           </div>
           </div>
           </SwiperSlide>
         <SwiperSlide>
-        <div className='card1'>
+        <div className='card1 three'>
           <div className='card1One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
+            <p>Sale collection</p>
+            <h2>Up to 80% off retail</h2>
             <button>show me all</button>
           </div>
           <div className='card1Two'> 
-            <img src={cardImg1} alt="card-image" />
+            <img src={cardImg2} alt="card-image" />
           </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className='card1'>
+        <div className='card1 four'>
           <div className='card1One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
+            <p>Sale collection</p>
+            <h2>Up to 80% off retail</h2>
             <button>show me all</button>
           </div>
           <div className='card1Two'> 
-            <img src={cardImg1} alt="card-image" />
+            <img src={cardImg3} alt="card-image" />
           </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className='card1'>
-          <div className='card1One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
-            <button>show me all</button>
-          </div>
-          <div className='card1Two'> 
-            <img src={cardImg1} alt="card-image" />
-          </div>
-          </div>
-          </SwiperSlide>
-        <SwiperSlide>
-        <div className='card1'>
-          <div className='card1One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest from top brands</h2>
-            <button>show me all</button>
-          </div>
-          <div className='card1Two'> 
-            <img src={cardImg1} alt="card-image" />
-          </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
+      </div>
+      
 
+      <div className='homeSectionTwo'>
+      <h2 className='homesectionTwoh2'>New Arrivals. <span>REY backpacks & bags</span></h2>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide> 
+          <div className='card2'>
+          <div className='card2One'>
+            <p>Explore new arrivals</p>
+            <h2>Shop the latest <br/> from top brands</h2>
+            <button>show me all</button>
+          </div>
+          <div className='card2Two'> 
+            <img src={cardImg1} alt="card-image" />
+          </div>
+          </div>
+          </SwiperSlide>
+      </Swiper>
+        
     </div>
     </div>
   )

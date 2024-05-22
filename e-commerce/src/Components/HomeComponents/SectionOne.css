@@ -91,16 +91,31 @@
     padding: 30px;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 
 }
 
+.two{
+    background-color: #fae6fa;
+}
+
+.three{
+    background-color: #e9edee;
+}
+
+.four{
+    background-color: #f0fff0;
+}
+
 .card1 p{
-    font-size: 12px;
+    font-size: 15px;
+    
 }
 
 
 .card1 h2{
     font-size: 20px;
+   
 }
 
 .card1One{
@@ -116,16 +131,32 @@
     position: absolute;
     bottom: 15px;
     left: 25px;
+    font-size: 16px;
+    cursor: pointer;
     
 }
 
 .card1Two{
     width: 100%;
 }
+
+.card1Two img{
+    height: 100%;
+}
 .homeSectionTwo{
     padding: 20px 10%;
-    padding-top: 100px;
-    
+    padding-top: 100px; 
+
+}
+
+.homesectionTwoh2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #000;
+}
+
+.homesectionTwoh2 span{
+    color: gray;
 
 }
 
@@ -157,4 +188,51 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+  /*===============section two====================== */
+
+  .card2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    background-color: #eeebd4;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .card2One{
+    width: 100%;
+}
+
+.card2One button{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.card2Two{
+    width: 100%;
+}
+
+.card2 h2{
+    font-size: 20px;
+}
+
+.card2 p{
+    font-size: 15px;
+}
+
+
   
