@@ -20,6 +20,7 @@ import img5 from '../images/sport-7.webp'
 
 import { FiSearch } from "react-icons/fi";
 
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,6 +28,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+
+
 
 
 
@@ -192,14 +195,132 @@ const SectionOne = () => {
       >
         <SwiperSlide> 
           <div className='card2'>
-          <div className='card2One'>
-            <p>Explore new arrivals</p>
-            <h2>Shop the latest <br/> from top brands</h2>
-            <button>show me all</button>
-          </div>
           <div className='card2Two'> 
-            <img src={cardImg1} alt="card-image" />
+            <img src={img3} alt="card-image" />
           </div>
+
+          <div className='card2One'>
+            <p>Leather Gloves</p>
+            <p>Perfect mint green</p>
+           
+          </div>
+          <ul className='card2List'>
+            <li>XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+
+          <div className='card2Onediv'>
+            <span>$42</span>
+            <p> 4.9(98 reviews)</p>
+          </div>
+
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide> 
+          <div className='card2'>
+          <div className='card2Two'> 
+            <img src={img4} alt="card-image" />
+          </div>
+
+          <ul className='card2List'>
+            <li>XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+
+          <div className='card2One'>
+            <p>Manhattan Toy WRT</p>
+            <p>New design 2023</p>
+           {/*<button>show me all</button>*/} 
+          </div>
+
+          <div className='card2Onediv'>
+            <span>$30</span>
+            <p>4.9(98 reviews)</p>
+          </div>
+
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide> 
+          <div className='card2'>
+          <div className='card2Two'> 
+            <img src={img5} alt="card-image" />
+          </div>
+
+          <div className='card2One'>
+            <p>Ella Leather Tote</p>
+            <p>Cream pink</p>
+           {/*<button>show me all</button>*/} 
+          </div>
+
+          <ul className='card2List'>
+            <li>XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+
+          <div className='card2Onediv'>
+            <span>$145</span>
+            <p>4.9(98 reviews)</p>
+          </div>
+
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide> 
+          <div className='card2'>
+          <div className='card2Two'> 
+            <img src={img1} alt="card-image" />
+          </div>
+
+          <div className='card2One'>
+            <p>Jump Rope Kids</p>
+            <p>Classic green</p>
+           {/*<button>show me all</button>*/} 
+          </div>
+
+          <ul className='card2List'>
+            <li>XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+
+          <div className='card2Onediv'>
+            <span>$68</span>
+            <p>4.9(98 reviews)</p>
+          </div>
+
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide> 
+          <div className='card2'>
+          <div className='card2Two'> 
+            <img src={img2} alt="card-image" />
+          </div>
+
+          <div className='card2One'>
+            <p>Wool Cashmere Jacket</p>
+            <p>Matte black</p>
+           {/*<button>show me all</button>*/} 
+          </div>
+
+          <div className='card2Onediv'>
+            <span>$12</span>
+            <p>4.9(98 reviews)</p>
+          </div>
+
           </div>
           </SwiperSlide>
       </Swiper>
